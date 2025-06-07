@@ -25,9 +25,9 @@ Write-Host "Windows Build $currentBuild"
 if (-not ($allowedBuilds -contains $currentBuild)) {
     Write-Warning "The Windows Build ($currentBuild) is not officially supported."
     Write-Host "`nOptions:"
-    Write-Host "[1] Trotzdem alles ausführen"
-    Write-Host "[2] ExplorerPatcher überspringen"
-    Write-Host "[3] Abbrechen"
+    Write-Host "[1] Install It "
+    Write-Host "[2] Bypass ExplorerPatcher"
+    Write-Host "[3] Cancel"
     $choice = Read-Host "Choose An Option (1-3)"
 
     switch ($choice) {
