@@ -33,7 +33,7 @@ if (-not ($allowedBuilds -contains $currentBuild)) {
     switch ($choice) {
         "1" { $runAll = $true; $skipEP = $false }
         "2" { $runAll = $true; $skipEP = $true }
-        "3" { Write-Host ""; pause; exit }
+        "3" { Write-Host "Exiting"; pause; exit }
         default {
             Write-Warning ""
             pause
