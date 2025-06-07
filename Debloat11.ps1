@@ -56,32 +56,6 @@ if (Test-Path $themePath) {
 }
 
 
-$wallpaperUrl = "https://4kwallpapers.com/images/wallpapers/windows-server-2025-3840x2160-15386.jpg"
-$picFolder = "$env:USERPROFILE\Pictures"
-$wallpaperPath = "$picFolder\windows-server-2025.jpg"
-
-if (-not (Test-Path $picFolder)) {
-    New-Item -ItemType Directory -Path $picFolder | Out-Null
-}
-
-
-try {
-    Invoke-WebRequest -Uri $wallpaperUrl -OutFile $wallpaperPath -ErrorAction Stop
-} catch {
-    Write-Warning "Error While Download Background $_"
-}
-
-Write-Host "Applying Background"
-Add-Type @"
-using System.Runtime.InteropServices;
-public class Wallpaper {
-  [DllImport("user32.dll", SetLastError = true)]
-  public static extern bool SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
-}
-"@
-[Wallpaper]::SystemParametersInfo(20, 0, $wallpaperPath, 3)
-
-
 if (-not $skipEP) {
     Write-Host "Installiere ExplorerPatcher..."
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
