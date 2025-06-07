@@ -19,7 +19,6 @@ Windows is a powerful operating system, but it often ships with unnecessary bloa
 
 - Debloat11 Installs ExplorerPatcher For Devices That Meet The requeriments 
 - It Also Installs A Useblee Browser (Google Chrome)
-- Downloads A Wallpaper 
 - Activates Darkmode
 - And Soo much more tweaks in the future---
 
@@ -28,7 +27,7 @@ Windows is a powerful operating system, but it often ships with unnecessary bloa
 Currently, Debloat11 is in early development and does not provide an automated installer. To use it:
 
 1. Open Powershell As Administrator
-2. Type iwr  https://raw.githubusercontent.com/Banaxi-dev/Debloat11/refs/heads/main/Debloat11.ps1 | iex (What This Does is Download And Install The script alternative to just going on the website and downloading it)
+Type iwr `https://raw.githubusercontent.com/Banaxi-dev/Debloat11/refs/heads/main/Debloat11.ps1` | iex (What This Does is Download And Install The script alternative to just going on the website and downloading it)
 3. Wait For it to Finish
 
 > **Important:** Always create a system restore point or backup before applying any tweaks.
