@@ -18,7 +18,7 @@ Windows is a powerful operating system, but it often ships with unnecessary bloa
 ## What it Does
 
 - Debloat11 Installs ExplorerPatcher For Devices That Meet The requeriments 
-- It Also Installs A Useblee Browser (Google Chrome)
+- It Also Installs A Usefull Browser (Google Chrome)
 - Activates Darkmode
 - And Soo much more tweaks in the future---
 
